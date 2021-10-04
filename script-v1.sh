@@ -21,7 +21,7 @@ git status
 
 #append 2 lines to script file and push to black
 git checkout Black
-then copy the version of file to Black
+#then copy the version of file to Black
 git checkout main script-v1.sh
 git status
 git add .
