@@ -35,5 +35,3 @@ git add .
 git commit -am "adding 2 lines"
 git push origin Black
 
-hello again
-I need a cup of coffee
