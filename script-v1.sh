@@ -3,7 +3,7 @@
 cd /home/seltatawy/git-clone/
 git clone git@github.com:seltatawy/Task-H-Repo.git
 cd Task-H-Repo/
-git branch > branches
+git branch -a > branches
 chmod +x branches
 git add .
 git commit -am "adding branches file"
