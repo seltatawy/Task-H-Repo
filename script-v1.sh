@@ -1,5 +1,5 @@
 #!/bin/bash
-#script step 7 in task
+
 cd /home/seltatawy/git-clone/
 git clone git@github.com:seltatawy/Task-H-Repo.git
 
