@@ -32,8 +32,8 @@ git add --all
 git commit -am "adding branches file"
 git push -f origin Black
 #append 2 lines
-echo "hello again" >> script-v1.sh
-echo "I need a cup of coffee" >> script-v1.sh
+echo "hello again" >> script-v6.sh
+echo "I need a cup of coffee" >> script-v6.sh
 git add --all
 git commit -am "adding 2 lines"
 git push origin Black
