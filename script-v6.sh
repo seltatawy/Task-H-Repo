@@ -12,7 +12,7 @@ for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v main `; do
    git branch --track ${branch#remotes/origin/} $branch
 done
 #list all branches and save to branches file
-git branch -a > branches_`date +%Y-%m-%d_%H:%M:%S`
+git branch -a > branches
 chmod +x branches*
 git add --all
 git commit -am "adding branches file"
@@ -29,7 +29,7 @@ git checkout Black
 git checkout main script-v6.sh
 git status
 git add --all
-git commit -am "adding branches file"
+git commit -am "adding script file"
 git push -f origin Black
 #append 2 lines
 echo "hello again" >> script-v6.sh
