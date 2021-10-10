@@ -1,0 +1,10 @@
+#Download jenkins
+wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+#vm using winscp to move it to VM
+cp jenkins.war /opt/tomcat/webapps
+#list apps
+ls /opt/tomcat/webapps
+systemctl restart tomcat
+sudo mkdir /opt/tomcat/.jenkins
+sudo chown -R tomcat: /opt/tomcat/.jenkins
+systemctl restart tomcat
