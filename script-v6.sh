@@ -12,7 +12,7 @@ for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v main `; do
    git branch --track ${branch#remotes/origin/} $branch
 done
 #list all branches and save to branches file
-git branch -a > branches_`date +%Y-%m-%d_%H:%M:%S`
+git branch -a > branches
 chmod +x branches*
 git add --all
 git commit -am "adding branches file"
@@ -26,14 +26,14 @@ git status
 #append 2 lines to script file and push to black
 git checkout Black
 #then copy the version of file to Black
-git checkout main script-v1.sh
+git checkout main script-v6.sh
 git status
 git add --all
-git commit -am "adding branches file"
+git commit -am "adding script file"
 git push -f origin Black
 #append 2 lines
-echo "hello again" >> script-v1.sh
-echo "I need a cup of coffee" >> script-v1.sh
+echo "hello again" >> script-v6.sh
+echo "I need a cup of coffee" >> script-v6.sh
 git add --all
 git commit -am "adding 2 lines"
 git push origin Black
@@ -41,5 +41,3 @@ git push origin Black
 
 
 
-hello again
-I need a cup of coffee
