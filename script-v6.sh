@@ -21,7 +21,6 @@ pwd
 git checkout Red
 #search for string Hello in logs"
 git log -b Red --grep "Hello$"
-git status
 
 #append 2 lines to script file and push to black
 git checkout Black
@@ -41,5 +40,3 @@ git push -f origin Black
 
 
 
-hello again
-I need a cup of coffee
