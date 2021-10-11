@@ -16,7 +16,7 @@ git branch -a > branches
 chmod +x branches*
 git add --all
 git commit -am "adding branches file"
-git push origin main
+git push -f origin main
 pwd
 git checkout Red
 #search for string Hello in logs"
@@ -36,7 +36,7 @@ echo "hello again" >> script-v6.sh
 echo "I need a cup of coffee" >> script-v6.sh
 git add --all
 git commit -am "adding 2 lines"
-git push origin Black
+git push -f origin Black
 
 
 
