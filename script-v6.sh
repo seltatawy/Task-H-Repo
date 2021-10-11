@@ -8,6 +8,9 @@ git clone git@github.com:seltatawy/Task-H-Repo.git
 cd Task-H-Repo/
 #to get all branches in from remote git hub
 rm -f branches*
+git add --all
+git commit -am "removing branches file"
+git push -f origin main
 for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v main `; do
    git branch --track ${branch#remotes/origin/} $branch
 done
@@ -40,5 +43,3 @@ git push -f origin Black
 
 
 
-hello again
-I need a cup of coffee
